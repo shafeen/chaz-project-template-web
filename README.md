@@ -1,1 +1,1 @@
-A simple project template for chaz-js.
+A simple web project template for chaz-js.

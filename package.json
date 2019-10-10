@@ -1,5 +1,5 @@
 {
-  "name": "chaz-project-template-simple",
+  "name": "chaz-project-template-web",
   "version": "0.1.0",
   "description": "",
   "main": "app.js",
@@ -9,18 +9,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shafeen/chaz-project-tempate-simple.git"
+    "url": "git+https://github.com/shafeen/chaz-project-tempate-web.git"
   },
   "author": "Shafeen M.",
   "license": "UNLICENSED",
   "bugs": {
     "url": ""
   },
-  "homepage": "https://github.com/shafeen/chaz-project-tempate-simple#readme",
+  "homepage": "https://github.com/shafeen/chaz-project-tempate-web#readme",
   "dependencies": {
-    "chaz-js": "^0.4.3",
+    "chaz-js": "^0.4.5",
+    "compression": "^1.7.4",
     "config": "^3.2.2",
-    "dotenv": "^8.1.0"
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
   },
   "devDependencies": {
     "nodemon": "^1.19.2"
