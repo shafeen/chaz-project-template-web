@@ -1,0 +1,20 @@
+extends layout
+
+block content
+
+  style.
+    .gitbranchlabel {
+      background: #ffcb6c;
+      padding: 1px 2px;
+      border: thin solid slategray;
+      border-radius: 4px;
+    }
+
+  h1=title
+
+  div NODE_ENV: #{nodeEnvValue}
+  div Server launched: #{serverLaunchRelativeTime} (#{serverLaunchFormattedTime})
+  div
+    | Current branch:&nbsp;
+    span.gitbranchlabel #{gitBranch}
+    | &nbsp;@#{gitBranchHash}
