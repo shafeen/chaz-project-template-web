@@ -1,9 +1,13 @@
+require('dotenv').config();
+
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-const mode = process.env['NODE_ENV'] === 'production' ? 'production' : 'development';
+const PROD = 'production', DEV = 'development';
+const webpackMode = process.env['NODE_ENV'] === PROD ? PROD : DEV;
+const watchEnabled = process.env['NODE_ENV'] !== PROD && process.env['NODE_ENV'] !== DEV;
 
 module.exports = {
-    mode: mode,
-    watch: true,
+    mode: webpackMode,
+    watch: watchEnabled,
     watchOptions: { ignored: ['node_modules'], poll: 1000 },
     entry: {
         vueBundleHome: './web/vuejs/Home/Home.js'
